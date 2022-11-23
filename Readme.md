@@ -1,7 +1,7 @@
 # Личный проект «Мишка» 
 
 * Студент: [Татьяна Ипатова](https://up.htmlacademy.ru/adaptive/27/user/1654609).
-* Наставник: `Неизвестно`.
+* Наставник: [Сергей Остаповец](https://htmlacademy.ru/profile/seraphim).
 
 ---
 
