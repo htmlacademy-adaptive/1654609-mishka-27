@@ -38,8 +38,8 @@
           </a>
         </div>
       </div>
-      <div class="second-nav__wrapper">
-        <ul class="second-nav__list site-list">
+      <div class="main-nav__second-nav__wrapper">
+        <ul class="main-nav__second-nav__list site-list">
           <li class="site-list__item">
             <a href="new.html">
               Новые поступления
@@ -57,7 +57,7 @@
     </nav>
   </header>
   <main class="form-container">
-    <h1 class="form-title__slogan">Вязание на заказ</h1>
+    <h1 class="form-container__title">Вязание на заказ</h1>
     <p class="form-description">
       Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы
       уточнить детали.
@@ -171,9 +171,9 @@
         <!--тут не очень понимаю это заголовок? и дальше тоже? там как-то по-разному сделаны формы-->
         <h2 class="form-phone-email__title">ФИО</h2>
         <ul class="form-phone-email__list">
-          <li class="form-phone__item">
-            <form class="form-phone__form" action="https://echo.htmlacademy.ru/" method="post">
-              <label for="form-phone__label">
+          <li class="form-phone-email__phone__item">
+            <form class="form-phone-email__phone__form" action="https://echo.htmlacademy.ru/" method="post">
+              <label for="form-phone-email__phone__label">
                 Тел
               </label>
               <input class="field" placeholder="+7 ХХХ ХХХ ХХ ХХ*" type="phone" name="phone" id="form-phone__label"
@@ -182,9 +182,9 @@
             </form>
           </li>
 
-          <li class="form-email__item">
-            <form class="form-email__form" action="https://echo.htmlacademy.ru/" method="post">
-              <label for="form-email__label" required>
+          <li class="form-phone-email__email__item">
+            <form class="form-phone-email__email__form" action="https://echo.htmlacademy.ru/" method="post">
+              <label for="form-phone-email__email__label" required>
                 E-mail
               </label>
               <input class="field" placeholder="Ваш Email*" type="email" name="email" id="form-email__label">
