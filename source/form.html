@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Мишка</title>
+</head>
+
+<body class="page-body">
+  <header class="main-header">
+    <a class="main-header__logo" href="index.html">
+      <img src="" alt="Магазин «Мишка».">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a href="catalog.html">
+              Каталог товаров
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="knitting.html">
+              Вязание на заказ
+            </a>
+          </li>
+        </ul>
+        <div class="main-nav__list user-list">
+          <a class="user-list__login" href="login.html">
+            <img src="" alt="Иконка поиска.">
+          </a>
+          <a class="user-list__cart" href="cart.html">
+            <img src="" alt="Иконка корзины.">
+            Корзина: пока пуста
+          </a>
+        </div>
+      </div>
+      <div class="main-nav__second-nav__wrapper">
+        <ul class="main-nav__second-nav__list site-list">
+          <li class="site-list__item">
+            <a href="new.html">
+              Новые поступления
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="sale.html">
+              Распродажа
+            </a>
+          </li>
+          <li class="site-list__item">
+            Бесплатная доставка по России
+          </li>
+        </ul>
+    </nav>
+  </header>
+  <main class="form-container">
+    <h1 class="form-container__title">Вязание на заказ</h1>
+    <p class="form-description">
+      Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы
+      уточнить детали.
+    </p>
+    <section class="form-radio">
+      <div class="form-radio__wrapper">
+        <fieldset class="form-radio__group">
+          <legend class="form-radio__title">Тип</legend>
+          <ul class="form-radio__list">
+            <li class="form-radio__item">
+              <label class="control">
+                <input class="control-input" type="radio" name="product-group" value="Yes" checked>
+                Аксессуар для интерьера
+              </label>
+            </li>
+            <li class="form-radio__item">
+              <label class="control">
+                <input class="control-input" type="radio" name="product-group" value="No">
+                Детская игрушка
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+      </div>
+    </section>
+
+    <section class="form-checkboxes">
+      <div clas="form-checkboxes__wrapper">
+        <fieldset class="form-checkboxes__group">
+          <!--Тут не понимаю так надо делать или через заголовок?-->
+          <legend class="form-checkboxes__title">Цвет</legend>
+          <ul class="form-checkboxes__list">
+            <li class="form-checkboxes__item">
+              <label class="control">
+                <input class="control-input" type="checkbox" name="White" checked>
+                Белый
+              </label>
+            </li>
+            <li class="form-checkboxes__item">
+              <label class="control">
+                <input class="control-input" type="checkbox" name="Gray" checked>
+                Серый
+              </label>
+            </li>
+            <li class="form-checkboxes__item">
+              <label class="control">
+                <input class="control-input" type="checkbox" name="tiffany">
+                Тиффани
+              </label>
+            </li>
+            <li class="form-checkboxes__item">
+              <label class="control">
+                <input class="control-input" type="checkbox" name="идфсл">
+                Черный
+              </label>
+            </li>
+            <li class="form-checkboxes__item">
+              <label class="control">
+                <input class="control-input" type="checkbox" name="pink">
+                Розовый
+              </label>
+            </li>
+            <li class="form-checkboxes__item">
+              <label class="control">
+                <input class="control-input" type="checkbox" name="orange">
+                Оранжевый
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+      </div>
+    </section>
+
+    <section class="form-name">
+      <div class="form-name__wrapper">
+        <h2 class="form-name__title">ФИО</h2>
+        <ul class="form-name__list">
+          <li class="form-name__item">
+            <form class="form-name__form" action="https://echo.htmlacademy.ru/" method="post">
+              <label for="form-name__label">
+                Имя
+              </label>
+              <!--Тип и имя одно и тоже значение ставить?-->
+              <input class="field" placeholder="Введите ваше имя*" type="name" name="name" id="form-name__label"
+                required>
+            </form>
+          </li>
+          <li class="form-name__item">
+            <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
+              <label for="form-name__label">
+                Фамилия
+              </label>
+              <input class="field" placeholder="Укажите фамилию*" type="name" name="name" id="form-name__label"
+                required>
+            </form>
+          </li>
+          <li class="form-name__item">
+            <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
+              <label for="form-name__label" required>
+                Отчество
+              </label>
+              <input class="field" placeholder="Отчество, если желаете" type="name" name="name" id="form-name__label">
+            </form>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="form-phone-email">
+      <div class="form-phone-email__wrapper">
+        <!--тут не очень понимаю это заголовок? и дальше тоже? там как-то по-разному сделаны формы-->
+        <h2 class="form-phone-email__title">ФИО</h2>
+        <ul class="form-phone-email__list">
+          <li class="form-phone-email__phone__item">
+            <form class="form-phone-email__phone__form" action="https://echo.htmlacademy.ru/" method="post">
+              <label for="form-phone-email__phone__label">
+                Тел
+              </label>
+              <input class="field" placeholder="+7 ХХХ ХХХ ХХ ХХ*" type="phone" name="phone" id="form-phone__label"
+                required>
+              <img src="" alt="Иконка телефона">
+            </form>
+          </li>
+
+          <li class="form-phone-email__email__item">
+            <form class="form-phone-email__email__form" action="https://echo.htmlacademy.ru/" method="post">
+              <label for="form-phone-email__email__label" required>
+                E-mail
+              </label>
+              <input class="field" placeholder="Ваш Email*" type="email" name="email" id="form-email__label">
+              <img src="" alt="Иконка сообщения">
+            </form>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="textarea-container">
+      <div class="textarea-container__wrapper">
+        <form class="textarea-container__form" action="https://echo.htmlacademy.ru/" method="post">
+          <label for="textarea-container__label" required>
+            Доп
+          </label>
+          <input class="field" placeholder="Опишите все ваши пожелания к заказу" type="textarea" name="textarea" id="textarea-container__label">
+        </form>
+      </div>
+    </section>
+    <!--Не очень понимаю это надо в див обернуть? или в секцию? Это относится ко всей форме, а не к последней секции, верно?-->
+    <a class="button form-container__to-order" href="form.html">Отправить заказ</a>
+    <small class="form-description">*Поля обязательны для заполнения</small>
+  </main>
+  <footer class="main-footer">
+    <div class="main-footer__wrapper">
+      <div class="main-footer__logo">
+        <img src="" alt="Магазин «Мишка».">
+      </div>
+      <div class="main-footer__social social">
+        <h3 class="visually-hidden">Социальные сети</h3>
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы в
+              Ютубе</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">Мы в Телеграме</a>
+          </li>
+        </ul>
+      </div>
+      <div class="main-footer__copyright copyright">
+        <b class="copyright__text">Разработано:</b>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <img src="" alt="Логотип HTML Academy">
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
