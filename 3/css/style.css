@@ -1,45 +1,45 @@
-.main-header {
-  background-color: #ffffff;
-  padding: 0;
-  margin: 0;
-}
-@font-face {
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 400;
-  src: url("/source/fonts/opensans.woff2") format("woff2"), url("/source/fonts/opensans.woff") format("woff");
-}
-@font-face {
-  font-family: "Open-Sans";
-  font-style: normal;
-  font-weight: 700;
-  src: url("/source/fonts/opensansbold.woff2") format("woff2"), url("/source/fonts/opensansbold.woff") format("woff");
-}
 body {
   background-color: #ffffff;
   font-family: "Open Sans", sans-serif, "Arial";
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
-  line-height: 20px;
+  line-height: 30px;
   color: #444444;
+}
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/opensans.woff2") format("woff2"), url("../fonts/opensans.woff") format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Open-Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/opensansbold.woff2") format("woff2"), url("../fonts/opensansbold.woff") format("woff");
+  font-display: swap;
 }
 .button {
   font-family: "Open Sans", sans-serif, "Arial";
-  font-weight: 700;
+  font-weight: 400;
   font-size: 17px;
   line-height: 16px;
   color: #444444;
   text-transform: uppercase;
   margin-bottom: 36px;
 }
+.main-header {
+  background-color: #ffffff;
+  padding: 0;
+  margin: 0;
+}
 .main-container__title {
-  font-family: "Open Sans", sans-serif, "Arial";
   font-weight: 700;
   font-size: 27px;
   line-height: 30px;
   color: #000000;
-  padding: 0;
   margin: 0;
 }
 .main-container {
@@ -47,13 +47,11 @@ body {
   margin-bottom: 31px;
 }
 .catalog__wrapper {
-  padding: 0;
   margin: 0;
   margin-bottom: 31px;
 }
 .catalog__list {
   list-style-type: none;
-  margin: 0;
   padding: 0;
 }
 .catalog__item--interior {
@@ -63,7 +61,6 @@ body {
   background-color: #56c3b2;
 }
 .catalog__title {
-  font-family: "Open Sans", sans-serif, "Arial";
   font-weight: 700;
   font-size: 19px;
   line-height: 24px;
@@ -76,72 +73,53 @@ body {
   margin-bottom: 31px;
 }
 .product-info__header__title {
-  font-family: "Open Sans", sans-serif, "Arial";
   font-weight: 700;
   font-size: 25px;
   line-height: 30px;
   color: #000000;
-  padding: 0;
   margin: 0;
 }
 .product-info__week {
-  font-family: "Open Sans", sans-serif, "Arial";
   font-weight: 700;
   font-size: 17px;
   line-height: 20px;
   color: #63d1bb;
-  padding: 0;
   margin: 4px 0 18px 0;
 }
 .product-info__description {
-  padding: 0;
   margin: 0;
   margin-bottom: 28px;
 }
+.product-info__list {
+  margin: 0;
+}
 .product-info__price {
-  font-family: "Open Sans", sans-serif, "Arial";
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
   color: #444444;
-  padding: 0;
   margin: 26px 0 24px 0;
-}
-.button {
-  font-family: "Open Sans", sans-serif, "Arial";
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 20px;
-  color: #444444;
-  text-decoration: none;
-  margin: 0;
-  padding: 0;
 }
 .about__wrapper {
   margin: 0;
   margin-bottom: 58px;
 }
 .about__title {
-  font-family: "Open Sans", sans-serif, "Arial";
   font-weight: 700;
   font-size: 25px;
   line-height: 30px;
   color: #000000;
-  padding: 0;
   margin: 0;
   margin-bottom: 28px;
 }
 .about__list {
   list-style-type: none;
   padding: 0;
-  margin: 0;
 }
 .about__item {
   margin: 0;
-  padding: 0;
 }
 .about__item--description {
-  font-family: "Open Sans", sans-serif, "Arial";
   font-weight: 700;
   font-size: 17px;
   line-height: 20px;
@@ -157,42 +135,37 @@ body {
   margin-bottom: 38px;
 }
 .reviews__title {
-  font-family: "Open Sans", sans-serif, "Arial";
   font-weight: 700;
   font-size: 25px;
   line-height: 30px;
   color: #000000;
-  padding: 0;
   margin: 0;
-  padding-bottom: 14px;
+  margin-bottom: 14px;
 }
 .reviews__text {
-  padding: 0;
   margin: 0;
-  padding-bottom: 33px;
+  margin-bottom: 33px;
 }
 .reviews__author-name {
-  padding: 0;
   margin: 0;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
 .contacts-info__wrapper {
   margin: 0;
-  padding: 0;
   margin-bottom: 39px;
 }
-.contacts-info__header__title {
-  font-family: "Open Sans", sans-serif, "Arial";
+.contacts-info__header-title {
   font-weight: 700;
   font-size: 25px;
   line-height: 30px;
   color: #000000;
-  padding: 0;
   margin: 0;
-  padding-bottom: 28px;
+  margin-bottom: 28px;
+}
+.contacts-info__list {
+  margin: 0;
 }
 .contacts-info__image {
-  padding: 0;
   margin: 62px 0 42px 0;
 }
 .main-footer__wrapper {
@@ -210,7 +183,6 @@ body {
   margin: 0;
 }
 .copyright__text {
-  font-family: "Opens Sans", sans-serif, "Arial";
   font-weight: 700;
   font-size: 19px;
   line-height: 18px;
@@ -222,50 +194,12 @@ body {
   padding: 0;
   margin: 0;
 }
-.site-list {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-.site-list__item {
-  font-family: "Open Sans", sans-serif, "Arial";
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 24px;
-  color: #000000;
-  text-decoration: none;
-}
-.site-list__item-second {
-  font-family: "Open Sans", sans-serif, "Arial";
-  font-weight: 700;
-  font-size: 15px;
-  line-height: 24px;
-  color: #000000;
-  text-decoration: none;
-}
-.site-list__item-delivery {
-  font-family: "Open Sans", sans-serif, "Arial";
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 24px;
-  color: #444444;
-}
-.user-list__cart {
-  text-decoration: none;
-  font-family: "Open Sans", sans-serif, "Arial";
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 24px;
-  color: #000000;
-}
 .catalog-container-wrapper {
   background-color: #f1f1f1;
   margin: 0;
-  padding: 0;
   margin-bottom: 17px;
 }
 .catalog-container__title {
-  font-family: "Open Sans", sans-serif, "Arial";
   font-weight: 700;
   font-size: 27px;
   line-height: 30px;
@@ -279,56 +213,44 @@ body {
   padding: 0;
 }
 .catalog-product__title {
-  font-family: "Openn Sans", sans-serif, "Arial";
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
   color: #000000;
   margin: 0;
-  padding: 0;
-  padding-top: 27px;
+  margin-top: 27px;
 }
 .catalog-product__description {
-  font-family: "Openn Sans", sans-serif, "Arial";
-  font-weight: 400;
   font-size: 13px;
   line-height: 30px;
   color: #444444;
   margin: 0;
-  padding: 0;
-  padding-top: 6px;
+  margin-top: 6px;
 }
-.catalog-product__cart-price__price {
-  font-family: "Openn Sans", sans-serif, "Arial";
+.catalog-product__price {
   font-weight: 700;
   font-size: 15px;
   line-height: 24px;
   color: #000000;
   margin: 0;
-  padding: 0;
 }
 .video-container__wrapper {
   margin: 30px 0 58px 0;
 }
 .video-title {
-  font-family: "Open Sans", sans-serif, "Arial";
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
   color: #000000;
 }
 .video-container__description {
-  font-family: "Open Sans", sans-serif, "Arial";
-  font-weight: 400;
   font-size: 13px;
   line-height: 24px;
   color: #444444;
-  margin: 0;
-  padding: 35px 0 41px 0;
+  margin: 35px 0 41px 0;
 }
 .video-container__button {
   text-decoration: none;
-  font-family: "Open Sans", sans-serif, "Arial";
   font-weight: 700;
   font-size: 18px;
   line-height: 16px;
@@ -338,25 +260,19 @@ body {
 .form-container-wrapper {
   background-color: #f1f1f1;
   margin: 0;
-  padding: 0;
   margin-bottom: 17px;
 }
 .form-container__title {
-  font-family: "Open Sans", sans-serif, "Arial";
   font-weight: 700;
   font-size: 27px;
   line-height: 30px;
   color: #000000;
-  margin: 0;
   padding: 74px 0;
 }
 .form-container__description {
-  font-family: "Open Sans", sans-serif, "Arial";
-  font-weight: 400;
   font-size: 13px;
   line-height: 24px;
   color: #444444;
-  padding: 0;
   margin: 0;
   padding-bottom: 29px;
 }
@@ -379,7 +295,7 @@ body {
 .form-group__name-list {
   list-style-type: none;
 }
-.control {
+.form-group__control {
   font-family: "Open Sans", sans-serif, "Arial";
   font-weight: 700;
   font-size: 17px;
@@ -409,7 +325,6 @@ body {
   padding: 0;
 }
 .form-group__name-item {
-  font-family: "Open Sans", sans-serif, "Arial";
   font-weight: 700;
   font-size: 17px;
   line-height: 18px;
@@ -421,7 +336,6 @@ body {
   list-style-type: none;
 }
 .form-group__contacts-item {
-  font-family: "Open Sans", sans-serif, "Arial";
   font-weight: 700;
   font-size: 17px;
   line-height: 16px;
@@ -431,7 +345,6 @@ body {
   padding: 0;
 }
 .form-group__info-label {
-  font-family: "Open Sans", sans-serif, "Arial";
   font-weight: 700;
   font-size: 17px;
   line-height: 16px;
@@ -444,10 +357,32 @@ body {
   margin: 17px 0 55px 0;
 }
 .form-group__description {
-  font-family: "Open Sans", sans-serif, "Arial";
-  font-weight: 400;
   font-size: 14px;
   line-height: 16px;
   color: #444444;
+}
+.site-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.site-list__item {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  color: #000000;
+  text-decoration: none;
+}
+.site-list__item-delivery {
+  font-size: 15px;
+  line-height: 24px;
+  color: #444444;
+}
+.user-list__cart {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  color: #000000;
 }
 /*# sourceMappingURL=style.css.map */
